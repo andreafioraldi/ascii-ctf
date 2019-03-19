@@ -1,0 +1,51 @@
+=========
+ascii-ctf
+=========
+
+A tiny and minimal web platform for jeopardy ctf hosting. Who needs javascript?
+Real hackers uses ascii.
+
+1) Why?
+-------
+
+Are you tired of complex websites with useless heavy features and you want host
+a CTF for your leet hackers friends?
+
+CTFd is too heavy for the free dyno on Heroku?
+
+Are You a fan of ascii like me?
+
+Well, this is the rigth CTF plaform for you.
+
+2) Overview
+-----------
+
+Define a description of the CTF in templates/index.html.
+Define the set of challenges in chals.py.
+Run python run.py and you are up.
+
+On Heroku you should only enable the Heroku Postgres extension.
+
+3) Score policy
+---------------
+
+I don't like the CTFs that benefit players depending on the timezone, so there
+isn't first blood.
+
+All the challenges starts with the same points. More solves, less points.
+This choice let the users to define the difficulty of a challenge.
+
+If two players have the same score the rank is computed looking at the last
+submission time.
+
+4) Contribution
+---------------
+
+Pull requests are open. The main objective now is to port to python 3.
+
+5) Whoami
+---------
+
+I'm malweisse and I play with TRX and mhackeroni.
+
+My twitter is: https://twitter.com/andreafioraldi

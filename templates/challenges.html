@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+Avaiable challenges:
+
+{% for challenge in challenges %}  - <a href="/challenge/{{challenge.name}}">{{challenge.name}}</a> {{ '(solved)' if challenge.name in current_user.solved else '' }}
+    Score: {{challenge.score}}
+    Solves: {{challenge.solves}}
+    Category: {{challenge.category}}
+
+{% endfor %}<form method="post" action="/"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}" /></form>
+{% endblock %}
