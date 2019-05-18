@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block page_content %}
-Avaiable challenges:
+Available challenges:
 
 {% for challenge in challenges %}  - <a href="/challenge/{{challenge.name}}">{{challenge.name}}</a> {{ '(solved)' if challenge.name in current_user.solved else '' }}
     Score: {{challenge.score}}
