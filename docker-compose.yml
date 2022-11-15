@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ascii-ctf:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - PORT=8080
+      - DATABASE_URL=sqlite:///db.sqlite
+    ports:
+      - "8080:8080"

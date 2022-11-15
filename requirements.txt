@@ -10,3 +10,4 @@ flask_security
 enum
 tornado
 psycopg2
+email-validator==1.1.3
