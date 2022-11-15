@@ -7,5 +7,6 @@ services:
       dockerfile: ./Dockerfile
     environment:
       - PORT=8080
+      - DATABASE_URL=sqlite:///db.sqlite
     ports:
       - "8080:8080"
